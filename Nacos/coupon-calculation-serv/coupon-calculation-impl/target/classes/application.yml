@@ -1,0 +1,20 @@
+server:
+  port: 20002
+  # ???????????????????message?
+  error:
+    include-message: always
+
+spring:
+  application:
+    name: coupon-calculation-serv
+
+logging:
+  level:
+    top.chen.coupon: debug
+
+# ????management??
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
